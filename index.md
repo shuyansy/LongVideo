@@ -1,28 +1,44 @@
 ---
 layout: default
 logo: video-llamb.png
-title: > 
-  VideoLLaMB: Long-Context Video Understanding with Recurrent Memory Bridges
+title: >
+  XL-VLM: Extra-Long Vision Language Model for Hour-Scale Video Understanding
 authors:
-    - name: Yuxuan Wang
-      tag: 1
-      url: https://patrick-tssn.github.io/
-    - name: Cihang Xie
-      url: https://cihangxie.github.io/
-      tag: 2
-    - name: Yang Liu
-      url: http://www.csyangliu.com/
+    - name: Yan Shu
+      tag: 1, 2
+      url:
+    - name: Peitian Zhang
+      url: 
       tag: 3
-    - name: Zilong Zheng
-      url: https://zilongzheng.github.io
-      tag: 1, <i class="fa fa-envelope"></i>
+    - name: Zheng Liu
+      url: 
+      tag: 2† <!--, <i class="fa fa-envelope"></i>-->
+    - name: Minghao Qin 
+      url: 
+      tag: 2, 4 
+    - name: Junjie Zhou 
+      tag: 2, 5
+      url:
+    - name: Tiejun Huang 
+      tag: 2, 6
+      url:
+    - name: Bo Zhao 
+      tag: 1, 2†
+      url:   
 affiliations:
-    - name: BIGAI
+    - name: Shanghai Jiaotong University
       tag: 1
-    - name: UCSC
+    - name: Beijing Academy of Artificial Intelligence
       tag: 2
-    - name: PKU
+    - name: Renmin University of China
       tag: 3
+    - name: Chinese Academy of Sciences
+      tag: 4
+    - name: Beijing Universiy of Posts and Telecommunications
+      tag: 5
+    - name: Peking University
+      tag: 6
+      
 # misc: > 
   # <sup><i class="fa fa-envelope"></i></sup> Corresponding authors.
 
@@ -32,11 +48,6 @@ links:
   - name: VideoLLaMB-7B
     icon: "&#129303;"
     url: https://huggingface.co/ColorfulAI/VideoLLaMB
-  - name: MM-NIAVH
-    icon: <i class="fab fa-github"></i>
-    url: https://github.com/bigai-nlco/NeedleInAVideoHaystack
-  - name: Demo (Coming Soon)
-    icon: <i class="fas fa-globe"></i>
 ---
 
 
@@ -47,27 +58,27 @@ links:
 
 <div class="column">
 <figure class="image">
-      <figcaption><span class="dnerf">VideoLLaMB</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</figcaption>
-      <img src="{{ '/assets/img/videollamb_niavh.png' | relative_url }}" />
+      <figcaption><span class="dnerf">LLaVA-Next-Video</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</figcaption>
+      <img src="{{ '/assets/img/a.png' | relative_url }}" />
 </figure>
 
 
 <figure class="image">
-      <figcaption><span class="dnerf">VideoLLaMB w/o Memory Retrieval</span></figcaption>
-      <img src="{{ '/assets/img/videollamb_niavh_nor.png' | relative_url }}" />
+      <figcaption><span class="dnerf">LongLLaVA</span></figcaption>
+      <img src="{{ '/assets/img/c.png' | relative_url }}" />
 </figure>
 
 </div>
 
 <div class="column">
 <figure class="image">
-      <figcaption><span class="dnerf">LongVA (<a href="https://github.com/EvolvingLMMs-Lab/LongVA">Zhang et. al., 2024</a>)</span></figcaption>
-      <img src="{{ '/assets/img/longva.png' | relative_url }}" />
+      <figcaption><span class="dnerf">LongVA</span></figcaption>
+      <img src="{{ '/assets/img/b.png' | relative_url }}" />
 </figure>
 
 <figure class="image">
-      <figcaption><span class="dnerf">MA-LLM (<a href="https://github.com/boheumd/MA-LMM">He et. al., 2024</a>)</span></figcaption>
-      <img src="{{ '/assets/img/mallm.png' | relative_url }}" />
+      <figcaption><span class="dnerf">XL-VLM</span></figcaption>
+      <img src="{{ '/assets/img/d.png' | relative_url }}" />
 </figure>
 
 </div>
@@ -594,7 +605,7 @@ where $$W_i^Q, W_i^K, W_i^V$$ are weight martices for query, key and value, resp
 
 ```bibtex
 @article{wang2024videollamb,
-    title={VideoLLaMB: Long-context Video Understanding with Recurrent Memory Bridges},
+    title={XL-VLM: Extra-Long Vision Language Model for Hour-Scale Video Understanding},
     author={Wang, Yuxuan and Xie, Cihang and Liu, Yang and Zheng, Zilong},
     journal={arXiv preprint arXiv:2409.01071},
     year={2024}

@@ -36,15 +36,17 @@
 
                             <div class="is-size-5 publication-authors">
                                 {% for author in page.authors %}
-                                <span class="author-block"><a href="{{ author.url }}">{{ author.name }}</a>{%- if
-                                    author.tag -%}<sup>{{- author.tag -}}</sup>{%- endif -%}</span>{% if forloop.last !=
-                                true %}, {% endif %}
+                                <span class="author-block">
+                                    <!--{% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% endif %}-->
+                                    {{ author.name }} {%- if author.tag -%}<sup>{{- author.tag -}}</sup>{%- endif -%}
+                                </span>
+                                {% if forloop.last != true %}, {% endif %}
                                 {% endfor %}
                             </div>
                             {% endif %}
 
                             {% if page.affiliations %}
-                            <div class="is-size-5 publication-authors">
+                            <div class="is-size-6 publication-authors">
                                 {% for affiliation in page.affiliations %}
                                 <span class="author-block">{% if
                                     affiliation.tag %}<sup>{{ affiliation.tag }}</sup>{% endif %}{{
