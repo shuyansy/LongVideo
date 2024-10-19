@@ -61,7 +61,7 @@ links:
          <div style="text-align: center;     flex: 1;    padding: 0 5% 0 8%;">
               The comparison of video MLLMs in performance and maximum frames. 
           </div>
-         <div style="width: 60%;    text-align: center;    padding: 5%;">
+         <div style="width: 60%;    text-align: center;    padding: 0 5%;">
             Results on the Needle-in-a-haystack evaluation within a single 80GB GPU. The x-axis represents the
             total number of frames in the video haystack. The y-axis shows the position where the needle image
             is located. Gray grids mean “Out of Memory”. Compared to other models, Video-XL can achieve
