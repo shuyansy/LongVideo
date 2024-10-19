@@ -57,21 +57,12 @@ links:
 
 <div class="container is-max-desktop" >
       <div><img src="{{ '/assets/img/firstImg.jpg' | relative_url }}" /></div>
-      <div class="" style="display: flex">
-         <div style="text-align: center;     flex: 1;    padding: 0 5% 0 8%;">
-              The comparison of video MLLMs in performance and maximum frames. 
-          </div>
-         <div style="width: 60%;    text-align: center;    padding: 0 5%;">
-            Results on the Needle-in-a-haystack evaluation within a single 80GB GPU. The x-axis represents the
-            total number of frames in the video haystack. The y-axis shows the position where the needle image
-            is located. Gray grids mean “Out of Memory”. Compared to other models, Video-XL can achieve
-            nearly 95% accuracy with maximum 2048 frames.
-          </div>
-      </div>
-
+    <figcaption class="has-text-centered" style=" padding: 0 5%;">
+        <span class="dnerf">Figure 1.</span> 
+        (Left) The comparison of video MLLMs in performance and maximum frames.<br> 
+        (Right) Results on the Needle-in-a-haystack evaluation within a single 80GB GPU.The x-axis represents thetotal number of frames in the video haystack, The y-axis shows the position where the needle imageis located. Gray grids mean “Out of Memory”. Compared to other models, Video-XL can achievenearly 95% accuracy with maximum 2048 frames.
+    </figcaption> 
 </div>
-
-
 </section>
 
 <section class="section">
